@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70400A5C-1C4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F8AFCCBC-0A10-49A5-A53E-3912E6EC8CAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDreamers.XRM.ConsoleTooling", "src\ITDreamers.XRM.ConsoleTooling\ITDreamers.XRM.ConsoleTooling.csproj", "{B5054A1D-DE7B-4384-B362-AF9C1E115511}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDreamers.XRM.TestConsoleHelpers", "src\ITDreamers.XRM.ConsoleTooling\ITDreamers.XRM.TestConsoleHelpers.csproj", "{B5054A1D-DE7B-4384-B362-AF9C1E115511}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

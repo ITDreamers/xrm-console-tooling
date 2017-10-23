@@ -7,8 +7,8 @@
     <ProjectGuid>{B5054A1D-DE7B-4384-B362-AF9C1E115511}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITDreamers.XRM.ConsoleTooling</RootNamespace>
-    <AssemblyName>ITDreamers.XRM.ConsoleTooling</AssemblyName>
+    <RootNamespace>ITDreamers.XRM.TestConsoleHelpers</RootNamespace>
+    <AssemblyName>ITDreamers.XRM.TestConsoleHelpers</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,8 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnvConfig.cs" />
+    <Compile Include="ProgramEnvExtender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SPIntegrationEnvConfig.cs" />
+    <Compile Include="Crm2SharePointEnvConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
