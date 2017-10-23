@@ -17,17 +17,13 @@ namespace ITDreamers.XRM.TestConsoleHelpers
         {
         }
 
-        //public AuthConfig SPAuthConfig => new AuthConfig(Tenant, SharePointServerUri, ClientId, SPUserCredentials);
+        public string Tenant => _envVariables[$"{VariablesGroupKey}_Tenant"].ToString();
 
-        public string Tenant => _envVariables[$"{_variablesGroupKey}_Tenant"].ToString();
+        public Guid ClientId => new Guid(_envVariables[$"{VariablesGroupKey}_ClientId"].ToString());
 
-        public Guid ClientId => new Guid(_envVariables[$"{_variablesGroupKey}_ClientId"].ToString());
-
-        public Uri SharePointServerUri => new Uri(_envVariables[$"{_variablesGroupKey}_SPServerUri"].ToString());
-
-        public string SharePointUrl => _envVariables[$"{_variablesGroupKey}_D365_URL"].ToString();
-        public string SharePointLgn => _envVariables[$"{_variablesGroupKey}_D365_LGN"].ToString();
-        public string SharePointPswd => _envVariables[$"{_variablesGroupKey}_D365_PSWD"].ToString();
+        public string SharePointUrl => _envVariables[$"{VariablesGroupKey}_SP_URL"].ToString();
+        public string SharePointLgn => _envVariables[$"{VariablesGroupKey}_SP_LGN"].ToString();
+        public string SharePointPswd => _envVariables[$"{VariablesGroupKey}_SP_PSWD"].ToString();
 
         public UserCredential SharePointCredentials => new UserCredential(SharePointLgn, SharePointPswd);
 
